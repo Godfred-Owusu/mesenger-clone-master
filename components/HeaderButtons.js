@@ -20,7 +20,7 @@ const HeaderButtons = ({ changeToUsers, navigation }) => {
   return (
     <View style={styles.headerLeftContainer}>
       <TouchableOpacity
-        onPress={changeToUsers ? openAllPeoples : ""}
+        onPress={changeToUsers ? openAllPeoples : console.log("")}
         style={[styles.button, { marginRight: 20 }]}
       >
         {!changeToUsers ? (
@@ -35,7 +35,7 @@ const HeaderButtons = ({ changeToUsers, navigation }) => {
         )}
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={changeToUsers ? AddContacts : ""}
+        onPress={changeToUsers ? AddContacts : console.log("")}
         style={styles.button}
       >
         {!changeToUsers ? (
